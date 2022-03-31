@@ -3,8 +3,10 @@
 const express = require('express')
 const app = express()
 
-var port = 5000
 
+args["port"]
+
+var port = args.port || process.env.PORT || 5000
 // Start an app server
 const server = app.listen(port, () => {
     console.log('App listening on port %PORT%'.replace('%PORT%',port))
