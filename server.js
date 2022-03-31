@@ -42,6 +42,7 @@ app.get('/app/', (req, res) => {
         res.status(200).json({'fliptails' : flipheads})
     });
 
+    
     // Default response for any other request
 app.use(function(req, res){
     res.status(404).send('404 NOT FOUND')
