@@ -24,25 +24,23 @@ app.get('/app/', (req, res) => {
         res.end(res.statusCode+ ' ' +res.statusMessage)
     });
 
-    app.get('/app/flip', (req, res) => {
+    app.get('/app/flip/', (req, res) => {
         const flip = coinFlip()
         res.status(200).json({'flip' : flip})
     });
     
-    app.get('/app/flips/:number', (req, res) => {
+    app.get('/app/flips/:number/', (req, res) => {
         const flips = coinFlips(req.params.number)
         const count = countFlips(flips)
         res.status(200).json({'raw' : flips, 'summary' : count})
     });
 
     app.get('/app/flip/call/heads', (req, res) => {
-        const flipheads = flipACoin("heads")
-        res.status(200).json(flipheads)
+        res.status(200).json(flipACoin("heads"))
     });
 
     app.get('/app/flip/call/tails', (req, res) => {
-        const fliptails = flipACoin("tails")
-        res.status(200).json(fliptails)
+        res.status(200).json(flipACoin("tails"))
     });
 
     
@@ -140,9 +138,9 @@ function coinFlip() {
   function flipACoin(call) {
     let flip = coinFlip();
     if (flip == call) {
-      return "call: " + call + ", flip: " + flip + ", result: win"; 
+      return {"call": call, "flip": flip, "result": "win"}; 
     } else {
-      return "call: " + call + ", flip: " + flip + ", result: lose"; 
+      return {"call": call, "flip": flip, "result": "lose"}; 
     }
   }
   
