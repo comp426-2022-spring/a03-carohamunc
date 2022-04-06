@@ -37,12 +37,12 @@ app.get('/app/', (req, res) => {
 
     app.get('/app/flip/call/heads', (req, res) => {
         const flipheads = flipACoin("heads")
-        res.status(200).json({'flipheads' : flipheads})
+        res.status(200).json(flipheads)
     });
 
     app.get('/app/flip/call/tails', (req, res) => {
         const fliptails = flipACoin("tails")
-        res.status(200).json({'fliptails' : flipheads})
+        res.status(200).json(fliptails)
     });
 
     
