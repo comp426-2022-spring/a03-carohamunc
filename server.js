@@ -42,7 +42,7 @@ app.get('/app/', (req, res) => {
     });
 
     
-    // Default response for any other request
+// Default response for any other request
 app.use(function(req, res){
     res.status(404).send('404 NOT FOUND')
     res.type("text/plain")
@@ -139,5 +139,3 @@ function coinFlip() {
       return {"call": call, "flip": flip, "result": "lose"}; 
     }
   }
-  
-  
