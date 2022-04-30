@@ -45,6 +45,7 @@ app.use(function(req, res){
     res.status(404).send('404 NOT FOUND')
     res.type("text/plain")
 });
+
     /** Coin flip functions 
  * This module will emulate a coin flip given various conditions as parameters as defined below
  */
