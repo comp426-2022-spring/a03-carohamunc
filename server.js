@@ -94,14 +94,14 @@ function coinFlip() {
     }
     return arr;
   }
-  
+
   /** Count multiple flips
    * 
    * Write a function that accepts an array consisting of "heads" or "tails" 
    * (e.g. the results of your `coinFlips()` function) and counts each, returning 
    * an object containing the number of each.
    * 
-   * example: conutFlips(['heads', 'heads','heads', 'tails','heads', 'tails','tails', 'heads','tails', 'heads'])
+   * example: countFlips(['heads', 'heads','heads', 'tails','heads', 'tails','tails', 'heads','tails', 'heads'])
    * { tails: 5, heads: 5 }
    * 
    * @param {string[]} array 
