@@ -86,6 +86,7 @@ function coinFlip() {
         'tails', 'heads'
       ]
    */
+  
   function coinFlips(flips) {
     var arr = [];
     for (let i = 0; i < flips; i++) {
