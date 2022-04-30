@@ -46,7 +46,7 @@ app.use(function(req, res){
     res.type("text/plain")
 });
 
-    /** Coin flip functions 
+/** Coin flip functions 
  * This module will emulate a coin flip given various conditions as parameters as defined below
  */
 
