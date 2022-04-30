@@ -86,7 +86,7 @@ function coinFlip() {
         'tails', 'heads'
       ]
    */
-  
+
   function coinFlips(flips) {
     var arr = [];
     for (let i = 0; i < flips; i++) {
@@ -94,6 +94,7 @@ function coinFlip() {
     }
     return arr;
   }
+  
   /** Count multiple flips
    * 
    * Write a function that accepts an array consisting of "heads" or "tails" 
